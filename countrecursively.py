@@ -17,10 +17,8 @@ def count_recursively(lst):
 		# print count
 		if lst == []:
 			return count
-		else:
-			# print lst
-			lst = lst[1:]
-			return count_using_recursion(count + 1, lst)
+
+		return count_using_recursion(count + 1, lst[1:])
 
 
     return count_using_recursion(0, lst)
